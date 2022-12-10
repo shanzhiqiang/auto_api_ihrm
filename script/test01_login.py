@@ -5,11 +5,12 @@ import logging
 
 from api import headers
 from api.api_login import ApiLogin
+from tools.config import BASE_PATH
 from tools.config02 import assert_commen
 
 def get_data():
     result = []
-    with open('../data/login_data.json',encoding='utf8') as f:
+    with open(BASE_PATH+'/data/login_data.json',encoding='utf8') as f:
         data = json.load(f)
         for value in data.values():
             result.append((value.values()))

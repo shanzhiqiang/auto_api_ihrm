@@ -1,4 +1,7 @@
 #封装断言方法
+import os
+
+
 def assert_commen(self,response):
     # 断言响应状态码
     self.assertEqual(200, response.status_code)
@@ -12,7 +15,7 @@ def assert_commen(self,response):
 #封装读取文件的方法
 def get_data(filename):
     result = []
-    with open('../data/'+filename,encoding='utf8') as f:
+    with open(BASE_PATH+'/data/'+filename,encoding='utf8') as f:
         #所有行读取文件
         data = f.readlines()
         #遍历data数据
@@ -21,5 +24,7 @@ def get_data(filename):
             result.append(x)
         return result[1::]
 
+
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 

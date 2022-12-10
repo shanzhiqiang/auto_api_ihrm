@@ -2,6 +2,9 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 import time
 
+from tools.config import BASE_PATH
+
+
 #封装断言方法
 def assert_commen(self,response,result,code,msg):
     # 断言响应状态码
@@ -19,7 +22,7 @@ def get_log_info():
     mylogger = logging.getLogger()
     #创建处理器
     shl = logging.StreamHandler()
-    thl = TimedRotatingFileHandler('../log/{}.log'.format(time.strftime('%y%m%d%H%M%S')),
+    thl = TimedRotatingFileHandler(BASE_PATH+'/log/{}.log'.format(time.strftime('%y%m%d%H%M%S')),
                                    when='h',interval=1,backupCount=0)
     #创建格式化器
     fmt = logging.Formatter()

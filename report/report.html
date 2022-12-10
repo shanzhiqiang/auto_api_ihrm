@@ -123,8 +123,8 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">iHRM人力资源管理系统测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> 最棒QA</p>
-<p class='attribute'><strong>开始时间 : </strong> 2022-12-09 22:25:33</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.463150</p>
+<p class='attribute'><strong>开始时间 : </strong> 2022-12-11 01:18:27</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.338764</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 10，通过 9，失败 1，通过率= 90.00%</p>
 
 <p class='description'></p>
@@ -242,11 +242,11 @@ Traceback (most recent call last):
   File "C:\Users\nao\AppData\Local\Programs\Python\Python311\Lib\site-packages\parameterized-0.7.0-py3.11.egg\parameterized\parameterized.py", line 518, in standalone_func
     return func(*(a + p.args), **p.kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nao\Desktop\auto_api_ihrm_03\script\test01_login.py", line 37, in test01_login
+  File "C:\Users\nao\Desktop\auto_api_ihrm_03\script\test01_login.py", line 38, in test01_login
     raise e
-  File "C:\Users\nao\Desktop\auto_api_ihrm_03\script\test01_login.py", line 35, in test01_login
+  File "C:\Users\nao\Desktop\auto_api_ihrm_03\script\test01_login.py", line 36, in test01_login
     assert_commen(self,response=r_login,code=code,result=result,msg=msg)
-  File "C:\Users\nao\Desktop\auto_api_ihrm_03\tools\config02.py", line 12, in assert_commen
+  File "C:\Users\nao\Desktop\auto_api_ihrm_03\tools\config02.py", line 15, in assert_commen
     self.assertEqual(code,response.json()['code'])
 AssertionError: 99999 != 20001
 
@@ -306,7 +306,7 @@ pt1_6: 测试数据为： 13800000002  False 20001 用户名或密码错误
 </tr>
 
 <tr id='pt2_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test01_post_0__1006</div></td>
+    <td class='passCase'><div class='testcase'>test01_post_0_shan1</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
@@ -317,8 +317,8 @@ pt1_6: 测试数据为： 13800000002  False 20001 用户名或密码错误
     <div id='div_pt2_1' class="collapse in">
     <pre>
     
-pt2_1: 测试数据为： 爱新觉罗强1006 18201545117 5211314959
-{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentId': '1066239913642561536', 'id': '1601221512667344896'}}
+pt2_1: 测试数据为： shan1 18201545120 5211314962
+{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentId': '1066239913642561536', 'id': '1601627418005614592'}}
 
 
     </pre>
@@ -338,7 +338,7 @@ pt2_1: 测试数据为： 爱新觉罗强1006 18201545117 5211314959
     <div id='div_pt2_2' class="collapse in">
     <pre>
     
-pt2_2: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1601221512667344896', 'mobile': '18201545117', 'username': '爱新觉罗强1006', 'enableState': 1, 'departmentId': '1066239913642561536', 'timeOfEntry': None, 'formOfEmployment': None, 'workNumber': '5211314959', 'departmentName': '人力资源部', 'roleIds': [], 'staffPhoto': None}}
+pt2_2: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1601627418005614592', 'mobile': '18201545120', 'username': 'shan1', 'enableState': 1, 'departmentId': '1066239913642561536', 'timeOfEntry': None, 'formOfEmployment': None, 'workNumber': '5211314962', 'departmentName': '人力资源部', 'roleIds': [], 'staffPhoto': None}}
 
 
     </pre>
@@ -358,7 +358,7 @@ pt2_2: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'
     <div id='div_pt2_3' class="collapse in">
     <pre>
     
-pt2_3: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentName': '人力资源部', 'workNumber': '5211314959', 'departmentId': '1066239913642561536', 'mobile': '18201545117', 'id': '1601221512667344896', 'username': '这是新名字'}}
+pt2_3: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'departmentName': '人力资源部', 'workNumber': '5211314962', 'departmentId': '1066239913642561536', 'mobile': '18201545120', 'id': '1601627418005614592', 'username': '这是新名字'}}
 
 
     </pre>
@@ -378,7 +378,7 @@ pt2_3: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'
     <div id='div_pt2_4' class="collapse in">
     <pre>
     
-pt2_4: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1601221512667344896', 'mobile': '18201545117', 'username': '这是新名字', 'enableState': 1, 'departmentId': '1066239913642561536', 'timeOfEntry': None, 'formOfEmployment': None, 'workNumber': '5211314959', 'departmentName': '人力资源部', 'roleIds': [], 'staffPhoto': None}}
+pt2_4: {'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1601627418005614592', 'mobile': '18201545120', 'username': '这是新名字', 'enableState': 1, 'departmentId': '1066239913642561536', 'timeOfEntry': None, 'formOfEmployment': None, 'workNumber': '5211314962', 'departmentName': '人力资源部', 'roleIds': [], 'staffPhoto': None}}
 
 
     </pre>
