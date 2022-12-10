@@ -1,0 +1,44 @@
+{
+  "login_01": {
+    "mobile": "13800000002",
+    "password": "123456",
+    "success": true,
+    "code": 10000,
+    "message": "操作成功！"
+  },
+  "login_02": {
+    "mobile": "13888889999",
+    "password": "123456",
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  "login_03": {
+    "mobile": "13800000002",
+    "password": "654312",
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  "login_04": {
+    "mobile": "",
+    "password": "",
+    "success": false,
+    "code": 99999,
+    "message": "抱歉，系统繁忙，请稍后重试"
+  },
+  "login_05": {
+    "mobile": "",
+    "password": "123456",
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  "login_06": {
+    "mobile": "13800000002",
+    "password": "",
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  }
+}
